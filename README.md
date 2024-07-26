@@ -105,5 +105,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 For any inquiries, please contact [Satyajit Behera](mailto:satyajitkk3032@gmail.com).
 - Instagram: [@bsatyajit_](https://www.instagram.com/bsatyajit_/)
 ```
-
-You can now use this as the `README.md` file for your GitHub repository.
