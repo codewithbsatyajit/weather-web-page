@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather Web | @bsatyajit_</title>
+
+	<!-- Link to the external stylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Import the CSS for Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- Search box for entering location -->
+		<div class="search-box">
+			<i class='bx bxs-map-pin'></i>
+			<input type="text" placeholder="enter your location">
+			<button class="bx bx-search"></button>
+		</div>
+		<!-- Message displayed when city is not found -->
+		<div class="not-found">
+			<p>City not found</p>
+		</div>
+		<!-- Weather information display box -->
+		<div class="weather-box">
+			<div class="box">
+				<div class="info-weather">
+					<div class="weather">
+						<!-- Weather icon -->
+						<img src="cloud.png">
+						<!-- Temperature display -->
+						<p class="temperature">0<span>°C</span></p>
+						<!-- Weather description -->
+						<p class="description">Broken Clouds</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Detailed weather information -->
+		<div class="weather-details">
+			<!-- Humidity information -->
+			<div class="humidity">
+				<i class='bx bx-water'></i>
+				<div class="text">
+					<div class="info-humidity">
+						<span>0%</span>
+					</div>
+					<p>Humidity</p>
+				</div>
+			</div>
+			<!-- Wind speed information -->
+			<div class="wind">
+				<i class='bx bx-wind'></i>
+				<div class="text">
+					<div class="info-wind">
+						<span>0Km/h</span>
+					</div>
+					<p>Wind Speed</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Link to the external JavaScript file -->
+	<script src="main.js"></script>
+</body>
+
+</html>

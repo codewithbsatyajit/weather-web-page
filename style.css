@@ -1,0 +1,185 @@
+/* Import the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Reset margin and padding for all elements, set box-sizing, and font family */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Style for the body element */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('bg3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* Container styles */
+.container {
+	position: relative;
+	width: 400px;
+	height: 555px;
+	background: rgba(255, 255, 255, .1);
+	backdrop-filter: blur(20px);
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 16px;
+	padding: 20px;
+	color: #fff;
+}
+
+/* Search box styles */
+.search-box {
+	position: relative;
+	width: 360px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+}
+
+/* Search box icon styles */
+.search-box i {
+	position: absolute;
+	left: 10px;
+	font-size: 28px;
+}
+
+/* Search box input styles */
+.search-box input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+	outline: none;
+	border-radius: 10px;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 0 48px 0 42px;
+}
+
+/* Placeholder text styles for search box input */
+.search-box input::placeholder {
+	color: #fff;
+	text-transform: capitalize;
+}
+
+/* Search button styles */
+.search-box button {
+	position: absolute;
+	right: 0;
+	width: 40px;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 28px;
+	color: #fff;
+	padding: 0 48px 0 5px;
+	cursor: pointer;
+}
+
+/* Styles for "city not found" message */
+.not-found {
+	display: none;
+	text-align: center;
+	margin: 40px 0;
+	font-size: 24px;
+	font-weight: 600;
+	color: #ff0000;
+}
+
+/* Active state for "city not found" message */
+.not-found.active {
+	display: block;
+}
+
+/* Weather box styles */
+.weather-box {
+	text-align: center;
+	margin: 40px 0;
+}
+
+/* Weather icon styles */
+.weather-box img {
+	width: 60%;
+}
+
+/* Temperature display styles */
+.weather-box .temperature {
+	position: relative;
+	font-size: 64px;
+	line-height: 1;
+	font-weight: 700;
+	margin: 20px 0 6px -30px;
+}
+
+/* Degree symbol styles */
+.weather-box .temperature span {
+	position: absolute;
+	font-size: 24px;
+	margin-left: 4px;
+}
+
+/* Weather description styles */
+.weather-box .description {
+	font-size: 22px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+/* Weather details container styles */
+.weather-details {
+	position: absolute;
+	bottom: 40px;
+	left: 0px;
+	width: 100%;
+	padding: 0 20px;
+	display: flex;
+}
+
+/* Humidity and wind styles */
+.weather-details .humidity,
+.weather-details .wind {
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+
+/* Humidity section styles */
+.weather-details .humidity {
+	padding-left: 20px;
+	justify-content: flex-start;
+}
+
+/* Wind section styles */
+.weather-details .wind {
+	padding-right: 20px;
+	justify-content: flex-end;
+}
+
+/* Weather details icon styles */
+.weather-details i {
+	font-size: 56px;
+	margin-right: 10px;
+}
+
+/* Humidity and wind value styles */
+.weather-details span {
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+/* Humidity and wind label styles */
+.weather-details p {
+	font-size: 14px;
+	font-weight: 500;
+}
